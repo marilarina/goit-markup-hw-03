@@ -1,0 +1,324 @@
+:root {
+    --logo-color: #4D5AE5; 
+    --text-color: #434455;
+    --title-color: #2E2F42;
+    --activebutton-background: #404BBF;
+    --hero-color: #FFFFFF;
+    --substrate-color: #F4F4FD;
+    --accent-color: #E7E9FC;
+    }
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: var(--text-color);
+
+} 
+h1, h2, h3, p {
+    margin-top: 0;
+    margin-bottom: 0;
+} 
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+} 
+img {
+    
+}
+.link {
+    display: inline;
+    text-decoration: none;
+}   
+.list {    
+    list-style: none;
+    display: flex;
+} 
+section {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.header {
+    border-bottom: 1px solid #E7E9FC;
+    width: 1128px;
+    padding-left: 156px;
+}
+.header-box > .box-1, .box-2, .box-3 {
+    margin: 0;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+       
+}
+.box-1 {
+    padding-left: 76px;
+}
+.box-2-item {
+    justify-content: space-between;
+}
+.box-3-item {
+    justify-content: space-between; 
+}
+.header-logo {
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--logo-color);
+}
+.logo-second-header {
+    color: var(--title-color);
+}
+.header-item:hover,
+.header-item:focus {
+    color: var(--activebutton-background);
+}
+.header-item {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+   }
+.contact-item:hover,
+.contact-item:focus {
+    color: var(--activebutton-background);
+}
+.contact-item {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+
+.hero {
+    width: 1440px;
+    background: var(--title-color);
+    color: var(--hero-color);
+    text-align: center;
+    padding-top: 188px;
+    padding-left: 472px;
+    padding-bottom: 392px;
+} 
+
+.hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    width: 496px;
+    margin-right: 0;
+}
+
+.hero-btn {
+    display: inline-block;
+    font-family: 'Roboto';
+    background: var(--logo-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--hero-color);
+    margin-top: 48px;
+    align-items: center;
+    cursor: pointer;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+    background: var(--activebutton-background);
+    color: var(--hero-color);
+}
+.subtitle {
+   font-size: 36px;
+   line-height: 1.11;
+   text-align: center;
+   text-transform: capitalize;
+   color: var(--title-color);
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+.about-container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    
+}  
+.about-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-list > .about-item {
+    margin: 0;
+    padding: 0;
+    flex-basis: calc(100% / 4 -24px);
+}
+.card-container {
+    display: flex;
+    width: 1128px;
+    margin-top: 72px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.list  {
+    display: flex;
+    flex-wrap: wrap;
+
+} 
+.item-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+}
+
+.text {
+    display: inline;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+.filter-buttons {
+    
+    margin-left: 427px;
+    background: var(--hero-color);      
+}
+.filter-button {
+    
+    display: inline-block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em; 
+    margin-right: 24px;
+    padding-top: 12px;
+    padding-left: 24px;
+    padding-bottom: 12px;
+    padding-right: 24px;
+    color: var(--logo-color);
+    background: var(--substrate-color);
+    cursor: pointer;
+}
+.filter-button:hover,
+.filter-button:focus,
+.filter-button:active {
+    background: var(--activebutton-background);
+    color: var(--hero-color);
+}
+.team-cards {
+    background: var(--substrate-color);
+}
+.card {
+    text-align: center;  
+    background: var(--substrate-color);
+    width: 264px;
+}
+.container {
+    width: 1158px;
+    margin-top: 96px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+}   
+.list .projects {
+    
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    margin-left: -24px;
+    margin-top: -24px;
+    background: var(--hero-color);
+}
+
+.card > .list-item {
+    display: inline;
+    flex-basis: calc((100% - 48px) / 4);
+    background: var(--hero-color);
+}
+.project-container {
+    width: 1152px;
+    margin-right: auto;
+    margin-left: 156px;
+   justify-content: space-between;
+}
+ .project-item {
+    
+    flex-basis: calc((100% - 48px) / 3);
+    margin-top: 48px;
+    
+    border: 1px solid #E7E9FC;
+       
+}
+.project-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+    margin-top: 32px;
+    margin-left: 16 px;
+}
+.project-text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    margin-top: 8px;
+    margin-left: 16px;
+}
+.footer {
+    width: 1440px;
+    height: 310px;
+    margin-top: 0;    
+    background: var(--title-color);
+    line-height: 1.5x;
+}
+.footer >.logo-footer {
+    display: block;
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--logo-color);
+    padding-top: 100px;
+    margin-top: 120px;
+    margin-left: 156px;
+
+}
+.logo-second-footer {
+    color: var(--substrate-color);
+}
+.text-footer {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+    margin-left: 156px;
+    margin-top: 16px;
+    margin-right: 1020px;
+    margin-bottom: 100px;
+}
