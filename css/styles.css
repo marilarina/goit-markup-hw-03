@@ -22,6 +22,7 @@ ul {
     margin-bottom: 0;
     padding-left: 0;
 } 
+
 img {
     
 }
@@ -30,37 +31,27 @@ img {
     text-decoration: none;
 }   
 .list {    
-    list-style: none;
     display: flex;
+    list-style: none;
 } 
-section {
+.header-container {
+    width: 1128px;
+    border-bottom: 1px solid var(--accent-color);
+    display: flex;
+    align-items: flex-start;
     margin-top: 0;
     margin-bottom: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
-.header {
-    border-bottom: 1px solid #E7E9FC;
-    width: 1128px;
-    padding-left: 156px;
-}
-.header-box > .box-1, .box-2, .box-3 {
-    margin: 0;
-    
+.header-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-       
-}
-.box-1 {
-    padding-left: 76px;
-}
-.box-2-item {
-    justify-content: space-between;
-}
-.box-3-item {
     justify-content: space-between; 
 }
-.header-logo {
+
+ .header-logo {
     font-family: 'Raleway';
     font-size: 18px;
     font-weight: 800;
@@ -71,6 +62,10 @@ section {
 }
 .logo-second-header {
     color: var(--title-color);
+}
+
+.box-3 {
+    margin-left: auto;
 }
 .header-item:hover,
 .header-item:focus {
@@ -91,7 +86,7 @@ section {
     letter-spacing: 0.02em;
     color: var(--text-color);
 }
-
+   
 .hero {
     width: 1440px;
     background: var(--title-color);
@@ -122,6 +117,9 @@ section {
     line-height: 1.5;
     color: var(--hero-color);
     margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 32px;
     align-items: center;
     cursor: pointer;
 }
@@ -149,22 +147,32 @@ section {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+.about {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 .about-container {
-    width: 1158px;
+    width: 1128px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 72px;
-    padding-bottom: 72px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     
 }  
 .about-list {
     display: flex;
-    flex-wrap: wrap;
+    gap: 24px;
+    list-style: none;   
 }
 .about-list > .about-item {
+
     margin: 0;
     padding: 0;
-    flex-basis: calc(100% / 4 -24px);
+    flex-basis: calc((100% - 72px)/ 4);
+}
+.examples > .subtitle {
+    padding-bottom: 72px;
+
 }
 .card-container {
     display: flex;
@@ -195,7 +203,7 @@ section {
 }
 
 .filter-buttons {
-    
+    padding-bottom: 120px;
     margin-left: 427px;
     background: var(--hero-color);      
 }
@@ -218,6 +226,7 @@ section {
     padding-bottom: 12px;
     padding-right: 24px;
     color: var(--logo-color);
+    border: 1px solid #E7E9FC;
     background: var(--substrate-color);
     cursor: pointer;
 }
@@ -229,11 +238,29 @@ section {
 }
 .team-cards {
     background: var(--substrate-color);
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.team-cards > .subtitle {
+    margin-bottom: 72px;
 }
 .card {
+    display: flex;
     text-align: center;  
     background: var(--substrate-color);
-    width: 264px;
+   gap: 24px;
+   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px;
+    
+}
+.card-name {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.list-item {
+    
+    flex-basis: calc((100% - 72px)/ 4);
+    background: var(--hero-color);
 }
 .container {
     width: 1158px;
@@ -242,21 +269,19 @@ section {
     margin-right: auto;
     display: flex;
     flex-wrap: wrap;
+    padding-left: 15px;
+    padding-right: 15px;
 }   
-.list .projects {
-    
+.projects {
+    gap: 24px;
     letter-spacing: 0.02em;
     line-height: 1.5;
     margin-left: -24px;
     margin-top: -24px;
+    padding-bottom: 120px;
     background: var(--hero-color);
 }
 
-.card > .list-item {
-    display: inline;
-    flex-basis: calc((100% - 48px) / 4);
-    background: var(--hero-color);
-}
 .project-container {
     width: 1152px;
     margin-right: auto;
@@ -264,10 +289,8 @@ section {
    justify-content: space-between;
 }
  .project-item {
-    
     flex-basis: calc((100% - 48px) / 3);
-    margin-top: 48px;
-    
+    padding-bottom: 32px;
     border: 1px solid #E7E9FC;
        
 }
@@ -304,7 +327,7 @@ section {
     text-transform: uppercase;
     color: var(--logo-color);
     padding-top: 100px;
-    margin-top: 120px;
+    
     margin-left: 156px;
 
 }
