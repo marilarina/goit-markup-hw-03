@@ -22,12 +22,13 @@ ul {
     margin-bottom: 0;
     padding-left: 0;
 } 
-
 img {
-    
+    display: block;
+    max-width: 100%;
+    padding-right: 0;
 }
 .link {
-    display: inline;
+    display: inline-block;
     text-decoration: none;
 }   
 .list {    
@@ -35,22 +36,26 @@ img {
     list-style: none;
 } 
 .header-container {
-    width: 1128px;
+    width: 1158px;
     border-bottom: 1px solid var(--accent-color);
     display: flex;
-    align-items: flex-start;
-    margin-top: 0;
-    margin-bottom: 0;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 15px;
+}  
+.header nav, address {
+    display: flex; 
+}
+.headerbox-2, .headerbox-3 {
+    display: flex;
+    justify-content: space-between;
     padding-top: 24px;
     padding-bottom: 24px;
+    margin-left: -40px;
 }
-
 .header-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
-
  .header-logo {
     font-family: 'Raleway';
     font-size: 18px;
@@ -59,13 +64,21 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--logo-color);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-right: 76px;
 }
 .logo-second-header {
     color: var(--title-color);
 }
-
-.box-3 {
+address{
+    display: flex;
     margin-left: auto;
+    font-style: normal;
+}
+.address-item {
+    justify-content: space-between;
+    margin-left: 40px;
 }
 .header-item:hover,
 .header-item:focus {
@@ -76,12 +89,14 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--title-color);
+    margin-left: 40px;
    }
 .contact-item:hover,
 .contact-item:focus {
     color: var(--activebutton-background);
 }
 .contact-item {
+    
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
@@ -93,17 +108,24 @@ img {
     color: var(--hero-color);
     text-align: center;
     padding-top: 188px;
-    padding-left: 472px;
-    padding-bottom: 392px;
+    
+    padding-bottom: 188px;
 } 
-
+.hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
 .hero-title {
+    display: inline-block;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    text-align: center;
+    align-items: center;
     width: 496px;
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-btn {
@@ -146,18 +168,17 @@ img {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
 .about {
     padding-top: 120px;
     padding-bottom: 120px;
 }
 .about-container {
-    width: 1128px;
+    width: 1158px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    
+    padding-left: 15px;
+    padding-right: 15px;
 }  
 .about-list {
     display: flex;
@@ -165,28 +186,22 @@ img {
     list-style: none;   
 }
 .about-list > .about-item {
-
     margin: 0;
     padding: 0;
     flex-basis: calc((100% - 72px)/ 4);
 }
 .examples > .subtitle {
     padding-bottom: 72px;
-
 }
-.card-container {
-    display: flex;
+.examples-list {
     width: 1128px;
-    margin-top: 72px;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-.list  {
     display: flex;
-    flex-wrap: wrap;
+    gap: 24px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 120px;
+}
 
-} 
 .item-subtitle {
     font-weight: 500;
     font-size: 20px;
@@ -203,8 +218,9 @@ img {
 }
 
 .filter-buttons {
-    padding-bottom: 120px;
-    margin-left: 427px;
+    padding-bottom: 72px;
+    margin-left: auto;
+    margin-right: auto;
     background: var(--hero-color);      
 }
 .filter-button {
@@ -236,6 +252,14 @@ img {
     background: var(--activebutton-background);
     color: var(--hero-color);
 }
+.card-container {
+    display: flex;
+    width: 1128px;
+    margin-top: 72px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
 .team-cards {
     background: var(--substrate-color);
     padding-top: 120px;
@@ -248,9 +272,9 @@ img {
     display: flex;
     text-align: center;  
     background: var(--substrate-color);
-   gap: 24px;
-   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-border-radius: 0px 0px 4px 4px;
+    gap: 24px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
     
 }
 .card-name {
@@ -273,26 +297,30 @@ border-radius: 0px 0px 4px 4px;
     padding-right: 15px;
 }   
 .projects {
-    gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
     letter-spacing: 0.02em;
     line-height: 1.5;
     margin-left: -24px;
-    margin-top: -24px;
+    margin-top: -48px;
     padding-bottom: 120px;
     background: var(--hero-color);
 }
 
 .project-container {
-    width: 1152px;
+    width: 1158px;
     margin-right: auto;
-    margin-left: 156px;
-   justify-content: space-between;
+    margin-left: auto;
+   
 }
  .project-item {
-    flex-basis: calc((100% - 48px) / 3);
+    flex-basis: calc((100% / 3) - 24px);
+    padding-right: 0;
     padding-bottom: 32px;
+    margin-top: 48px;
+    margin-left: 24px;
     border: 1px solid #E7E9FC;
-       
+    
 }
 .project-subtitle {
     font-weight: 500;
