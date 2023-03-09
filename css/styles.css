@@ -12,7 +12,7 @@ body {
     font-size: 16px;
     color: var(--text-color);
 } 
-h1, h2, h3, p {
+h1, h2, h3 {
     margin-top: 0;
     margin-bottom: 0;
 } 
@@ -39,10 +39,13 @@ img {
     margin: 0 auto;
     padding: 0 15px;
 }
-.header {
-    display: flex; 
-    justify-content: space-between;
+.header > .container {
     border-bottom: 1px solid var(--accent-color);
+    display: flex;
+    justify-content: space-between;
+}
+.nav {
+    display: flex;
 }
 .header-logo {
     font-family: 'Raleway';
@@ -153,10 +156,13 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+.about {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 .about-list {
     display: flex;
     gap: 24px;
-    margin-top: 120px;
 }
 .about-list > .about-item {
     margin: 0;
@@ -164,13 +170,12 @@ img {
     flex-basis: calc((100% - 72px)/ 4);
 }
 .examples {
-    margin-top: 120px;
+    padding-bottom: 120px;
 }
 .examples-list {
     display: flex;
     gap: 24px;
     margin-top: 72px;
-    padding-bottom: 120px;
 }
 .examples-item {
     width: 360px;
@@ -184,11 +189,15 @@ img {
     color: var(--title-color);
 }
 .text {
-    display: inline;
     letter-spacing: 0.02em;
     line-height: 1.5;
     color: var(--text-color);
-    margin-top: 8px;
+    margin-top: 8px; 
+    margin-bottom: 0;  
+}
+.filter-section {
+    padding-top: 96px;
+    padding-bottom: 120px;
 }
 .filter-buttons {
     display: flex;
@@ -241,8 +250,7 @@ img {
     margin-top: 72px;                                     
 }
 .card-name {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding: 32px 16px;                                                       
 }
 .list-item {
     flex-basis: calc((100% - 72px)/ 4);
@@ -264,7 +272,8 @@ img {
 }  
 .project-name {
     padding: 32px 16px;
-    border: 1px solid var(--accent-color);;
+    border: 1px solid var(--accent-color);
+    border-top: none;
 }                                              
 .project-subtitle {
     font-weight: 500;
