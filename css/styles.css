@@ -16,6 +16,9 @@ h1, h2, h3 {
     margin-top: 0;
     margin-bottom: 0;
 } 
+p {
+    margin-bottom: 0;
+}
 ul {
     margin-top: 0;
     margin-bottom: 0;
@@ -39,8 +42,10 @@ img {
     margin: 0 auto;
     padding: 0 15px;
 }
-.header > .container {
+.header {
     border-bottom: 1px solid var(--accent-color);
+}
+.header > .container {
     display: flex;
     justify-content: space-between;
 }
@@ -193,7 +198,6 @@ img {
     line-height: 1.5;
     color: var(--text-color);
     margin-top: 8px; 
-    margin-bottom: 0;  
 }
 .filter-section {
     padding-top: 96px;
